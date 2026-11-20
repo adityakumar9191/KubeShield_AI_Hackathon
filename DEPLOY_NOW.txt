@@ -1,0 +1,21 @@
+LIVE DEMO DEPLOYMENT — FOLLOW IN ORDER
+
+A. GitHub
+1. Go to https://github.com/new and create a repository named KubeShield-AI.
+2. Set Public only if the hackathon rules allow public source code.
+3. In the new repo choose Add file > Upload files.
+4. Upload the CONTENTS of this project folder, not the outer folder itself.
+5. Confirm app.py and requirements.txt are visible at repository root; samples/ and .streamlit/ folders must also be present.
+6. Commit to main.
+
+B. Streamlit Community Cloud
+1. Go to https://share.streamlit.io/ and sign in with GitHub.
+2. Click Create app.
+3. Repository: your-account/KubeShield-AI
+4. Branch: main
+5. Main file path: app.py
+6. Click Deploy.
+7. Wait until app is running; copy the generated *.streamlit.app URL.
+8. Open the URL in an incognito window and phone to verify it is public.
+
+Never submit localhost:8501 as a live demo URL. Do not claim deployment until the public URL opens successfully.

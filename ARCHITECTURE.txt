@@ -1,0 +1,21 @@
+KubeShield AI — PS-09 Architecture
+
+Browser / user
+  |-- Upload YAML manifest OR choose included demo sample
+  v
+Streamlit UI (scanner, rule catalogue, scope page)
+  v
+PyYAML safe_load_all parser
+  v
+Kubernetes resource identification
+  |-- Pod / Deployment / StatefulSet / DaemonSet / ReplicaSet / Job / CronJob
+  |-- Role / ClusterRole / RoleBinding / ClusterRoleBinding
+  v
+Deterministic rule engine (KS001–KS014)
+  v
+Findings: severity + affected resource + evidence + remediation
+  |-- Heuristic posture score
+  |-- JSON report export
+
+Security boundary: uploaded files only. No cluster connection, kubectl execution,
+cloud credentials, deployment mutation, or automatic remediation.

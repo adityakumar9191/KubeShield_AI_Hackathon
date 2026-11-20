@@ -1,0 +1,16 @@
+KUBESHIELD AI — 90 SECOND DEMO SCRIPT
+
+Opening (10 sec):
+"KubeShield AI addresses PS-09: Kubernetes deployments can be exposed by unsafe pod settings, excessive privileges and broad RBAC. Our prototype reviews manifests before deployment."
+
+Vulnerable scan (25 sec):
+Select Vulnerable deployment. "The scanner parses YAML and checks selected security controls. Here we can see severity-ranked findings, evidence from the manifest and remediation guidance. Examples include privileged containers, host namespaces and wildcard RBAC."
+
+Hardened scan (20 sec):
+Select Hardened deployment. "We now compare a safer example with non-root execution, disabled privilege escalation, dropped capabilities and resource limits."
+
+Report and architecture (20 sec):
+"The result can be exported as structured JSON. The flow is YAML upload, parser, deterministic rule engine, prioritized findings and report."
+
+Honest scope (15 sec):
+"This is a static YAML prototype, not a live cluster scanner or a full CIS audit. Findings require human validation. Future work includes authorized cluster inventory, richer policy coverage and CI/CD integration."
